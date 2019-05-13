@@ -4,7 +4,6 @@
 
 export const environment = {
   production: false,
-  urlTopCollegue : "http://localhost:8080/topCollegue",
   urlServ : "http://localhost:8080"
 };
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CollegueInscription } from '../models/CollegueInscription';
 
 @Component({
   selector: 'app-participation',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParticipationComponent implements OnInit {
 
+  collegueInscription = new CollegueInscription("","","");
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  Inscription(){
+  }
 }

@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  urlServ : "https://top-collegues-api.herokuapp.com/"
 };
