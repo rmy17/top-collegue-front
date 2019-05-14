@@ -3,6 +3,7 @@ export class CollegueParticipant{
         public email:string,
         public nom:string,
         public prenom:string,
-        public photoUrl:string
+        public photoUrl:string,
+        public points:number
     ){}
 }

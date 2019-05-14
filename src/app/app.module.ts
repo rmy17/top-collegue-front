@@ -8,12 +8,16 @@ import { RouterModule } from '@angular/router';
 import { ROUTES } from './app.routes';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { MenuComponent } from './menu/menu.component';
+import { ClassementComponent } from './classement/classement.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ParticipationComponent,
-    VotesComponent
+    VotesComponent,
+    MenuComponent,
+    ClassementComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,21 @@
+<div class="col">
+  <div *ngFor="let colP of tabCollegueParticipant">
+    <div class="row justify-content-center">
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-md-2">
+              <div class="row-md-2">
+            <p>{{colP.points}}</p>
+              </div>
+          </div>
+          <div class="col-md-4">
+            <img src="{{colP.photoUrl}}" class="card-img" alt="...">
+          </div>
+          <div class="col-md-6">
+            <p>{{colP.nom}} {{colP.prenom}} </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
