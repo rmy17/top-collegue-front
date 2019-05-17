@@ -15,12 +15,12 @@ export class ClassementComponent implements OnInit {
 
   ngOnInit() {
     this._serv.recupCollegueParticipants().subscribe(col=> this.tabCollegueParticipant = col.sort((a,b)=> {
-      if (a.points < b.points)
-        return 1;
+      if (a.points > b.points)
+        return -1;
       else if(a.points === b.points)
         return 0;
       else
-        return -1;
+        return 1;
     }))
   }
 
