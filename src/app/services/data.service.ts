@@ -42,8 +42,8 @@ export class DataService {
   }))
   }
 
-  recupCollegueParticipants(): Observable<CollegueParticipant> {
-    return this._http.get<CollegueParticipant>(`${environment.urlServ}/votes`, {
+  recupCollegueParticipants(): Observable<CollegueParticipant[]> {
+    return this._http.get<CollegueParticipant[]>(`${environment.urlServ}/votes`, {
       withCredentials: true
     });
   }
