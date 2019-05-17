@@ -12,7 +12,7 @@ export class VotesComponent implements OnInit {
 
   constructor(private _serv : DataService) { }
   vote = new Vote("",true);
-  tabCollegueParticipants : CollegueParticipant;
+  tabCollegueParticipants = new Array();
 
   ngOnInit() {
     this._serv.recupCollegueParticipants().subscribe(colP => this.tabCollegueParticipants=colP, err => {})
